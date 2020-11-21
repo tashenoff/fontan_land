@@ -7,3 +7,7 @@
 .owl-height{
     height: 100px;
 }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background:$yellow!important;
+}

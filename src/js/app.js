@@ -10,6 +10,9 @@ $('.owl-carousel').owlCarousel({
     nav:true,
     padding : 23,
     stagePadding: 50,
+    autoplay:true,
+autoplayTimeout:2000,
+autoplayHoverPause:true,
     responsive:{
         0:{
             items:1
