@@ -1,0 +1,96 @@
+.sale {
+    background-image: url("/img/luchi.png");
+    background-color: $primary;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 616px;
+    display: flex;
+    margin-top: 110px;
+    align-items: center;
+    position: relative;
+    background-position: top center;
+
+    @media screen and (max-width: 600px) {
+        height: 500px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 4;
+
+        @media screen and (max-width: 600px) {
+            text-align: center;
+        }
+
+        .btn {
+            width: 250px;
+        }
+    }
+
+    h1 {
+        font-size: 63px;
+        color: #fff;
+        margin-top: 20px;
+        text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+            font-size: 32px;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-size: 24px;
+    }
+
+    &__points {
+        position: absolute;
+        top: -70px;
+        background-image: url(/img/point_group.svg);
+        display: block;
+        width: 600px;
+        height: 100%;
+        background-repeat: no-repeat;
+        text-align: center;
+        left: calc(50% - 306px);
+
+        @media screen and (max-width: 600px) {
+            background-image: url(/img/point_m.svg);
+            left: calc(50% - 118px);
+            top: -88px;
+            width: 100%;
+            max-width: 299px;
+        }
+
+        // &::after {
+        //     content: "";
+        //     width: 700px;
+        //     height: 700px;
+        //     // background-image: url(/img/points_3.svg);
+        //     position: absolute;
+        //     top: -10px;
+        //     left: calc(50% - 304px);
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        //     background-size: 530px;
+        //     z-index: 2;
+
+        //     @media screen and (max-width: 600px) {
+
+        //         width: 100%;
+        //         background-image: url(/img/point_m.svg);
+
+        //     }
+        // }
+    }
+
+    &__wrapper {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}

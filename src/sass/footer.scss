@@ -1,0 +1,23 @@
+footer{
+    background-color:black;
+    height: 92px;
+    color: #fff;
+}
+
+.footer{
+    &__wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 16px;
+
+    }
+
+    &__copy{
+        img{
+            width: 160px;
+        }
+
+    }
+}

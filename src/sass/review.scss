@@ -1,0 +1,25 @@
+.review{
+    text-align: center;
+
+    h1{
+        font-size: 28px;
+        margin: 40px 0;
+        text-transform: uppercase;
+    }
+
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__name{
+        margin: 31px 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+
+
+}
