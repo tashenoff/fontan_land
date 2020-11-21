@@ -645,6 +645,7 @@ footer {
 }
 .btn__big {
   width: 100%;
+  max-width: 300px;
 }
 .btn--orange {
   background-color: #ffb800;
@@ -653,9 +654,20 @@ footer {
 .btn--orange:hover {
   background-color: #ffcd4d;
 }
-.btn--blue {
+.btn__blue {
   background-color: #367bf5;
-  color: #fff;
+  color: #fff !important;
+}
+.btn__outline {
+  border: 2px solid #367bf5;
+  color: #367bf5 !important;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+.btn__outline:hover {
+  color: #fff !important;
 }
 
 .catalog {
@@ -664,7 +676,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 115px 0px;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
@@ -746,6 +757,18 @@ footer {
 .catalog__title {
   margin-top: 20px;
   height: 100%;
+}
+.catalog__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 120px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

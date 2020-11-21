@@ -13,8 +13,7 @@
     border-radius: 100px;
     transition: background-color 0.5s ease;
     text-decoration: none!important;
-
-  
+ 
 
 
     &:hover{
@@ -28,6 +27,7 @@
 
     &__big {
         width: 100%;
+        max-width: 300px;
       
     }
 
@@ -39,8 +39,23 @@
         }
     }
 
-    &--blue {
+    &__blue {
         background-color: $primary;
-        color: #fff;
+        color: #fff!important;
+      
+       
+    }
+
+
+    &__outline{
+        border: 2px solid $primary;
+        color: $primary!important;
+        transition: color 0.5s ease;
+        transition: background-color 0.5s ease;
+
+        &:hover{
+            color: #fff!important;
+
+        }
     }
 }
