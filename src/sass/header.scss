@@ -10,6 +10,13 @@
     background-attachment: fixed;
     background-position: center center;
 
+
+    .btn{
+        display: flex;
+        align-items: center;
+        max-width: 300px;
+    }
+
     &__headlines {
         h1,
         h3 {
