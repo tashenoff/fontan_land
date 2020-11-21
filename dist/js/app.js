@@ -11,21 +11,46 @@ $('.owl-carousel').owlCarousel({
     dots: true,
     padding: 23,
     stagePadding: 50,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive: {
         0: {
-            items: 1
+            items: 1,
+            autoplay: false,
         },
         600: {
-            items: 3
+            items: 3,
+            autoplay: false,
         },
         1000: {
             items: 5
         }
     }
 })
+
+
+// if ($(window).width() < 1280) {
+//   owl.trigger('stop.owl.autoplay');
+// } else{
+//   owl.trigger('play.owl.autoplay');
+// }
+
+
+if (window.innerWidth > 768) {
+    owl.trigger('stop.owl.autoplay');
+}
+
+
+function externalLinks() {
+    links = document.getElementsByTagName("a");
+    for (i = 0; i < links.length; i++) {
+        link = links[i];
+        if (link.getAttribute("href") && link.getAttribute("rel") == "external")
+            link.target = "_blank";
+    }
+}
+window.onload = externalLinks;
 
 
 
