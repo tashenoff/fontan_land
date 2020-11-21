@@ -781,7 +781,7 @@ footer {
   -ms-flex-direction: row;
   flex-direction: row;
   padding-top: 16px;
-  margin: 11px 8px 4px;
+  margin: 11px 8px 14px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
