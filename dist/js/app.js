@@ -3,6 +3,28 @@ $(function() {
 });
 
 
+
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    padding: 23,
+    stagePadding: 50,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 7
+        }
+    }
+})
+
+
+
 $(document).ready(function() {
     $("#back2Top").click(function(event) {
         event.preventDefault();
@@ -13,6 +35,9 @@ $(document).ready(function() {
     });
 
 });
+
+
+
 
 
 
