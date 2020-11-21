@@ -2,6 +2,7 @@
     display: flex;
     height: 100%;
     right: 0px;
+    padding: 16px;
 }
 
 .owl-height{
@@ -11,3 +12,15 @@
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background:$yellow!important;
 }
+
+		
+.owl-carousel:hover img {
+    opacity: 0.7!important;
+      transition: opacity .5s;
+  }
+  
+  .owl-carousel .item:hover img {
+    opacity: 1!important;
+    transition: opacity .5s;
+  }
+  

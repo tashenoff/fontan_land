@@ -689,6 +689,7 @@ footer {
 }
 
 .catalog {
+  background-color: rgba(54, 123, 245, 0.1);
   margin-top: 60px;
   text-align: center;
 }
@@ -763,7 +764,10 @@ footer {
   flex-direction: column;
   border-radius: 4px;
   background-color: #fff;
-  border: 1px solid #dbdbdb;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
   padding: 8px;
   text-align: center;
   height: 100%;
@@ -776,14 +780,16 @@ footer {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 0;
+  padding-top: 16px;
   margin: 11px 8px 4px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  border-top: 1px solid #dbdbdb;
 }
 .catalog__item:hover {
-  border: 1px solid #367bf5;
+  -webkit-box-shadow: 0px 4px 11px 0px rgba(54, 123, 245, 0.3);
+  box-shadow: 0px 4px 11px 0px rgba(54, 123, 245, 0.3);
 }
 .catalog__price {
   font-weight: bold;
@@ -822,6 +828,7 @@ footer {
   display: flex;
   height: 100%;
   right: 0px;
+  padding: 16px;
 }
 
 .owl-height {
@@ -831,6 +838,18 @@ footer {
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #ffb800 !important;
+}
+
+.owl-carousel:hover img {
+  opacity: 0.7 !important;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.owl-carousel .item:hover img {
+  opacity: 1 !important;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
