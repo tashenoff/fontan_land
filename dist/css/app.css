@@ -336,6 +336,10 @@ body {
   }
 }
 
+.checked {
+  color: orange;
+}
+
 .about {
   margin-top: 50px;
 }
@@ -489,9 +493,12 @@ body {
   align-items: center;
 }
 .review__name {
-  margin: 31px 20px;
+  margin: 11px 10px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.review__rating {
+  margin-bottom: 10px;
 }
 
 .sale {
