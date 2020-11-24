@@ -14,6 +14,21 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css" integrity="sha512-riTSV+/RKaiReucjeDW+Id3WlRLVZlTKAJJOHejihLiYHdGaHV7lxWaCfAvUR0ErLYvxTePZpuKZbrTbwpyG9w==" crossorigin="anonymous" />
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(69637480, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/69637480" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
   </head>
   <body>
     <section class="header">
@@ -27,7 +42,7 @@
                         <a href="tel:+77010278008">+7(701) 027 80 08</a>
                     </div>
                     <div class="header__call">
-                        <a href="https://wa.me/77010278008" class="btn btn--orange btn--orange__small">Написать в WhatsApp</a>
+                        <a href="https://wa.me/77010278008" role = "button" class="btn btn--orange btn--orange__small">Написать в WhatsApp</a>
                     </div>
                 </div>
             </nav>
@@ -36,19 +51,19 @@
                       <div class="col-lg-12 col-12">
                         <div class="header__headlines">
                             <h1>Сантехника</h1>
-                            <h3>в Нур-Султане</h3>
+                            <h2>в Нур-Султане</h2>
                             <p>Подыскиваете сантехнику для своей квартиры? Вам хотелось бы иметь
                                 возможность широкого выбора качественных товаров. Рассчитываете на помощь в подборе товара и доступные цены.
                                 У вас нет времени разъезжать по магазинам сантехники и строительным рынкам в
                                 поисках компании, которая будет соответствовать всем этим условиям?</p>
 
-                                <a href="https://wa.me/77010278008" class="btn btn--orange btn--orange__small"><span class="icon_24"></span>Получить консультацию</a>
+                                <a href="https://wa.me/77010278008" role = "button" class="btn btn--orange btn--orange__small"><span class="icon_24"></span>Получить консультацию</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header__footer">
-                <a class="arrow arrow__down" href="#about"></a>
+                <a role = "button" aria-label="scroll down" class="arrow arrow__down" href="#about"></a>
             </div>
         </div>
     </div>
@@ -56,15 +71,15 @@
 
 
 
-<a href="tel:+77010278008" class="button call_to_action"></a>
+<a href="tel:+77010278008" aria-label="call to us" role = "button" class="button call_to_action"></a>
     <section id="about" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
                 <div class="about__headlines">
                     <h1 class="number">96</h1>
-                    <h3>НАС РЕКОМЕНДУЮТ</br>
-                        КЛИЕНТОВ</h3>
+                    <h2>НАС РЕКОМЕНДУЮТ</br>
+                        КЛИЕНТОВ</h2>
                 </div>
                 <p>В своей деятельности мы ориентированы на интересы и потребности клиента. И наша задача – максимально
                     полно удовлетворить эти потребности. Мы стремимся к тому, чтобы помочь вам создать уют и комфорт в
@@ -108,20 +123,9 @@
         </div>
     </div>
 </section>
-    <!-- <section class="banner">
-    <div class="container">
-    <div class="banner__wrapper">
-     
-       
-          
-                <h1>Посмотрите каталог нашей продукции</h1>
-                <a href="http://fontanero.kz/ru/12-smesiteli" class="btn btn--orange btn--orange__small">Перейти в каталог</a>
-            
-          
-            </div>
-    </div>
-</section> -->
-    <section class="catalog">
+    
+
+<section class="catalog">
     <div class="container-fluid">
         <div class="catalog__wrapper">
             <div class="container">
@@ -139,145 +143,151 @@
 
             <div class="owl-carousel owl-theme">
 
-                <a href="http://fontanero.kz/ru/home/1097-installyaciya-dlya-podvesnogo-unitaza-knopka-skate-sosmopoliten-grohe-38772001-rapid-sl-germaniya.html" rel="external"
-                    class="catalog__item item">
+                <div class="catalog__item item">
                     <img class="catalog__img" src="/img/inst.jpg">
                     <div class="catalog__title">Инсталляция для подвесного унитаза + кнопка SKATE СOSMOPOLITEN GROHE
                         38772001 RAPID SL (Германия)</div>
                     <div class="catalog__item--footer">
-                        <div class="catalog__sale">-10 000 ₸</div>
-                        <div class="catalog__price">74,000.00 ₸</div>
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">74,000.00 ₸</div>
                     </div>
-                </a>
+                    <div class="catalog__link"> <a
+                            href="http://fontanero.kz/ru/home/1097-installyaciya-dlya-podvesnogo-unitaza-knopka-skate-sosmopoliten-grohe-38772001-rapid-sl-germaniya.html"
+                            class="btn btn--outline btn--orange__small">Подробнее</a></div>
+                </div>
 
 
 
-                <a href="http://fontanero.kz/ru/akrilovye-vanny/1032-vanna-akrilovaya-marka-one-diana-170x105-rlrossiya.html" rel="external"
-                    class="catalog__item item">
+                <a href="http://fontanero.kz/ru/akrilovye-vanny/1032-vanna-akrilovaya-marka-one-diana-170x105-rlrossiya.html"
+                    rel="external" rel="noopener" class="catalog__item item">
                     <img class="catalog__img" src="/img/vanna.jpg">
                     <div class="catalog__title">Ванна акриловая Marka One DIANA 170x105 R/L(Россия)</div>
                     <div class="catalog__item--footer">
-                        <div class="catalog__sale">-10 000 ₸</div>
-                    <div class="catalog__price">154,000.00 ₸</div>
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">154,000.00 ₸</div>
                     </div>
                 </a>
 
 
 
-                <a href="http://fontanero.kz/ru/mojki-iz-kamnya/34-kukhonnaya-mojka-mramornaya-granfest-standart-gf-s-780-l-rossiya.html?search_query=780&results=8" rel="external"
-                    class="catalog__item item">
+                <a href="http://fontanero.kz/ru/mojki-iz-kamnya/34-kukhonnaya-mojka-mramornaya-granfest-standart-gf-s-780-l-rossiya.html?search_query=780&results=8"
+                    rel="external" rel="noopener" class="catalog__item item">
                     <img class="catalog__img" src="/img/rakovina.jpg">
                     <div class="catalog__title">Кухонная мойка (мраморная) GranFest STANDART GF-S 780 L (Россия)
                     </div>
                     <div class="catalog__item--footer">
-                        <div class="catalog__sale">-10 000 ₸</div>
-                    <div class="catalog__price">41,000.00 ₸</div>
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">41,000.00 ₸</div>
                     </div>
                 </a>
 
 
 
 
-                <a href="http://fontanero.kz/ru/home/1150-unitaz-napolnyj-bezobodkovyj-grohe-393380003933200039330001-euro-ceramic-germaniya.html" rel="external"
-                    class="catalog__item item">
+                <a href="http://fontanero.kz/ru/home/1150-unitaz-napolnyj-bezobodkovyj-grohe-393380003933200039330001-euro-ceramic-germaniya.html"
+                    rel="external" rel="noopener" class="catalog__item item">
                     <img class="catalog__img" src="/img/unitaz.jpg">
                     <div class="catalog__title">Унитаз напольный безободковый GROHE 39338000/39332000/39330001 Euro
                         Ceramic (Германия)</div>
-                        <div class="catalog__item--footer">
-                        <div class="catalog__sale">-10 000 ₸</div>
-                    <div class="catalog__price">191,500.00 ₸</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">191,500.00 ₸</div>
                     </div>
                 </a>
 
 
-                <a href="http://fontanero.kz/ru/home/1277-lemark-lm-3162-c-omega-chekhiya.html?search_query=3162&results=1" rel="external"
-                class="catalog__item item">
-                <img class="catalog__img" src="/img/dush.jpg">
-                <div class="catalog__title">LEMARK LM 3162 C OMEGA (Чехия)</div>
+                <a href="http://fontanero.kz/ru/home/1277-lemark-lm-3162-c-omega-chekhiya.html?search_query=3162&results=1"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/dush.jpg">
+                    <div class="catalog__title">LEMARK LM 3162 C OMEGA (Чехия)</div>
                     <div class="catalog__item--footer">
-                    <div class="catalog__sale">-10 000 ₸</div>
-                <div class="catalog__price">78,960.00 ₸</div>
-                </div>
-            </a>
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">78,960.00 ₸</div>
+                    </div>
+                </a>
 
-            <a href="http://fontanero.kz/ru/dlya-umyvalnikov/902-smesitel-dlya-rakoviny-grohe-eurosmart-cosmopolitan-srednij-izliv-khrom-23327000.html?search_query=23327000&results=1" rel="external"
-            class="catalog__item item">
-            <img class="catalog__img" src="/img/kran.jpg">
-            <div class="catalog__title">Смеситель для раковины GROHE Eurosmart Cosmopolitan, средний излив, хром 23327000</div>
-                <div class="catalog__item--footer">
-                <div class="catalog__sale">-10 000 ₸</div>
-            <div class="catalog__price">48,000.00 ₸</div>
-            </div>
-        </a>
-
-
-        <a href="http://fontanero.kz/ru/home/1127-unitaz-podvesnoj-bezobodkovyj-grohe-39351000-bau-ceramic-germaniya.html" rel="external"
-        class="catalog__item item">
-        <img class="catalog__img" src="/img/unitaz2.jpg">
-        <div class="catalog__title">Унитаз подвесной безободковый GROHE 39351000 Bau Ceramic (Германия)</div>
-            <div class="catalog__item--footer">
-            <div class="catalog__sale">-10 000 ₸</div>
-        <div class="catalog__price">67,500.00 ₸</div>
-        </div>
-    </a>
+                <a href="http://fontanero.kz/ru/dlya-umyvalnikov/902-smesitel-dlya-rakoviny-grohe-eurosmart-cosmopolitan-srednij-izliv-khrom-23327000.html?search_query=23327000&results=1"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/kran.jpg">
+                    <div class="catalog__title">Смеситель для раковины GROHE Eurosmart Cosmopolitan, средний излив, хром
+                        23327000</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">48,000.00 ₸</div>
+                    </div>
+                </a>
 
 
-    
-    <a href="http://fontanero.kz/ru/akrilovye-vanny/1002-vanna-akrilovaya-marka-one-modern-170x70-rossiya.html" rel="external"
-    class="catalog__item item">
-    <img class="catalog__img" src="/img/vanna2.jpg">
-    <div class="catalog__title">Ванна акриловая Marka One MODERN 170x70 (Россия)</div>
-        <div class="catalog__item--footer">
-        <div class="catalog__sale">-15 000 ₸</div>
-    <div class="catalog__price">62,000.00 ₸</div>
-    </div>
-</a>
-
-
-<a href="http://fontanero.kz/ru/rakovina-nakladnaya/813-rakovina-nakladnaya-cersanit-p-um-cre351-oc-s-crea-35-square-polsha.html" rel="external"
-class="catalog__item item">
-<img class="catalog__img" src="/img/rakovina2.jpg">
-<div class="catalog__title">Раковина накладная CERSANIT P-UM-CRE35/1-oc-S CREA 35 Square (Польша)</div>
-    <div class="catalog__item--footer">
-    <div class="catalog__sale">-10 000 ₸</div>
-<div class="catalog__price">32,062.00 ₸</div>
-</div>
-</a>
-
-
-<a href="http://fontanero.kz/ru/home/957-rakovina-vstraivaemaya-keramin-bari-100-belarus.html" rel="external"
-class="catalog__item item">
-<img class="catalog__img" src="/img/rakovina3.jpg">
-<div class="catalog__title">Раковина встраиваемая КЕРАМИН "Бари 100" (Беларусь)</div>
-    <div class="catalog__item--footer">
-    <div class="catalog__sale">-10 000 ₸</div>
-<div class="catalog__price">41,000.00 ₸</div>
-</div>
-</a>
+                <a href="http://fontanero.kz/ru/home/1127-unitaz-podvesnoj-bezobodkovyj-grohe-39351000-bau-ceramic-germaniya.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/unitaz2.jpg">
+                    <div class="catalog__title">Унитаз подвесной безободковый GROHE 39351000 Bau Ceramic (Германия)
+                    </div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">67,500.00 ₸</div>
+                    </div>
+                </a>
 
 
 
-<a href="http://fontanero.kz/ru/dushevye-kabiny/600-dushevaya-kabina-1000kh1000kh2150-erlit-er-3510tp-c4-knr.html" rel="external"
-class="catalog__item item">
-<img class="catalog__img" src="/img/dush2.jpg">
-<div class="catalog__title">Душевая кабина 1000х1000х2150 ERLIT ER 3510TP-C4 (КНР)</div>
-    <div class="catalog__item--footer">
-    <div class="catalog__sale">-15 000 ₸</div>
-<div class="catalog__price">163,852.00 ₸</div>
-</div>
-</a>
+                <a href="http://fontanero.kz/ru/akrilovye-vanny/1002-vanna-akrilovaya-marka-one-modern-170x70-rossiya.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/vanna2.jpg">
+                    <div class="catalog__title">Ванна акриловая Marka One MODERN 170x70 (Россия)</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-15 000 ₸</div>
+                        <div class="catalog__info">62,000.00 ₸</div>
+                    </div>
+                </a>
+
+
+                <a href="http://fontanero.kz/ru/rakovina-nakladnaya/813-rakovina-nakladnaya-cersanit-p-um-cre351-oc-s-crea-35-square-polsha.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/rakovina2.jpg">
+                    <div class="catalog__title">Раковина накладная CERSANIT P-UM-CRE35/1-oc-S CREA 35 Square (Польша)
+                    </div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">32,062.00 ₸</div>
+                    </div>
+                </a>
+
+
+                <a href="http://fontanero.kz/ru/home/957-rakovina-vstraivaemaya-keramin-bari-100-belarus.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/rakovina3.jpg">
+                    <div class="catalog__title">Раковина встраиваемая КЕРАМИН "Бари 100" (Беларусь)</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">41,000.00 ₸</div>
+                    </div>
+                </a>
 
 
 
-<a href="http://fontanero.kz/ru/vodootvodyashhie-zheloba/1285-vodootvodyasshij-zhelob-pod-ukladku-plitki-matovyjpo-perimetru-nerzhaveyusshaya-stal-mch-ch-650-hn1-harmony-chekhiya.html" rel="external"
-class="catalog__item item">
-<img class="catalog__img" src="/img/111.jpg">
-<div class="catalog__title">Водоотводящий желоб под укладку плитки . Матовый.По периметру-нержавеющая сталь. MCH CH 650 HN1 HARMONY (Чехия)</div>
-    <div class="catalog__item--footer">
-    <div class="catalog__sale">-10 000 ₸</div>
-<div class="catalog__price">58,000.00 ₸</div>
-</div>
-</a>
+                <a href="http://fontanero.kz/ru/dushevye-kabiny/600-dushevaya-kabina-1000kh1000kh2150-erlit-er-3510tp-c4-knr.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/dush2.jpg">
+                    <div class="catalog__title">Душевая кабина 1000х1000х2150 ERLIT ER 3510TP-C4 (КНР)</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-15 000 ₸</div>
+                        <div class="catalog__info">163,852.00 ₸</div>
+                    </div>
+                </a>
+
+
+
+                <a href="http://fontanero.kz/ru/vodootvodyashhie-zheloba/1285-vodootvodyasshij-zhelob-pod-ukladku-plitki-matovyjpo-perimetru-nerzhaveyusshaya-stal-mch-ch-650-hn1-harmony-chekhiya.html"
+                    rel="external" rel="noopener" class="catalog__item item">
+                    <img class="catalog__img" src="/img/111.jpg">
+                    <div class="catalog__title">Водоотводящий желоб под укладку плитки . Матовый.По
+                        периметру-нержавеющая сталь. MCH CH 650 HN1 HARMONY (Чехия)</div>
+                    <div class="catalog__item--footer">
+                        <div class="catalog__info">-10 000 ₸</div>
+                        <div class="catalog__info">58,000.00 ₸</div>
+                    </div>
+                </a>
 
 
             </div>
@@ -286,7 +296,8 @@ class="catalog__item item">
     <div class="container">
         <div class="catalog__footer">
 
-            <a href="http://fontanero.kz/ru/12-smesiteli" class="btn btn--orange btn--orange__small">Посмотреть другие
+            <a href="http://fontanero.kz" rel="external" rel="noopener"
+                class="btn btn--orange btn--orange__small">Посмотреть другие
                 товары</a>
 
         </div>
@@ -356,8 +367,8 @@ class="catalog__item item">
             
             <div class="sale__content">
                 <h1>специальное предложение</h1>
-                <p>Отправьте сегодня заявку и получите 20% скидку!</p>
-                <a href="https://wa.me/77010278008" class="btn btn__big btn--orange">Написать в WhatsApp</a>
+                <p>Отправьте сегодня заявку и получите 5% скидку!</p>
+                <a href="https://wa.me/77010278008" role = "button" class="btn btn__big btn--orange">Написать в WhatsApp</a>
             </div>
         </div>
     </div>
@@ -373,7 +384,7 @@ class="catalog__item item">
 <footer>
     <div class="container">
         <div class="footer__wrapper">
-            <a id="back2Top" href="#" class="arrow arrow__top"></a>
+            <a id="back2Top" role = "button" aria-label="top" href="#" class="arrow arrow__top"></a>
             <div class="footer__copy"> <img src="/img/logo.svg" alt=""></div>
         </div>
     </div>

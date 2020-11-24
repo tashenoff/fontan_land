@@ -18,6 +18,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const webp = require('gulp-webp');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const nunjucks = require('gulp-nunjucks');
+const data = require('gulp-data');
 
 // Очистка папки dist
 function clean() {
@@ -49,7 +50,9 @@ function htmlProcess() {
     return gulp
         .src(['src/*.html'])
         .pipe(nunjucks.compile())
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./dist/'))
+        .pipe(data('./src/data.json'));
+
 }
 
 function imgProcessWebp() {

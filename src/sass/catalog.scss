@@ -77,7 +77,7 @@
     }
 
     &__sale {
-        color: red;
+        color: #de0f0f;
         font-weight: bold;
     }
     &__item {
@@ -96,7 +96,13 @@
             padding-top:16px;
             margin: 11px 8px 14px;
             justify-content: space-between;
-            border-top: 1px solid #dbdbdb;
+            border: 1px solid #dbdbdb;
+            padding: 16px;
+            border-radius: 42px;
+            @media screen and (max-width: 600px) {
+                padding: 8px;
+                font-size: 14px;
+            }
         }
 
         &:hover {
@@ -104,9 +110,14 @@
         }
     }
 
-    &__price {
+    &__info {
         font-weight: bold;
         color: $primary;
+        width: 100%;
+        &:first-child{
+           color: red;
+           border-right: 1px solid #e4e4e4;
+        }
 
         @media screen and (max-width: 600px) {
             padding: 0;

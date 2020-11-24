@@ -7,11 +7,11 @@ $(function() {
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
-    nav: true,
+
     dots: true,
     padding: 23,
     stagePadding: 50,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsive: {
@@ -25,22 +25,15 @@ $('.owl-carousel').owlCarousel({
             autoplay: false,
         },
         1000: {
+            items: 4
+        },
+
+        1400: {
             items: 5
         }
     }
 })
 
-
-// if ($(window).width() < 1280) {
-//   owl.trigger('stop.owl.autoplay');
-// } else{
-//   owl.trigger('play.owl.autoplay');
-// }
-
-
-if (window.innerWidth > 768) {
-    owl.trigger('stop.owl.autoplay');
-}
 
 
 function externalLinks() {
@@ -70,6 +63,14 @@ $(document).ready(function() {
 
 
 
+$('.owl-carousel').each(function() {
+
+    $(this).find('.owl-dot').each(function(index) {
+
+        $(this).attr('aria-label', index + 1);
+    });
+});
+
 
 $(".arrow__down").on('click', function(e) {
     e.preventDefault();
@@ -81,7 +82,7 @@ $(".arrow__down").on('click', function(e) {
 
 $(function() {
 
-    var target_block = $(".number"); // Ищем блок 
+    var target_block = $(".number");
     var blockStatus = true;
 
     $(window).scroll(function() {
@@ -90,7 +91,7 @@ $(function() {
 
         if (scrollEvent && blockStatus) {
 
-            blockStatus = false; // Запрещаем повторное выполнение функции до следующей перезагрузки страницы.
+            blockStatus = false;
 
             $({
                 numberValue: 0
@@ -98,12 +99,12 @@ $(function() {
                 numberValue: 96
             }, {
 
-                duration: 1500, // Продолжительность анимации, где 500 - 0.5 одной секунды, то есть 500 миллисекунд 
+                duration: 1500,
                 easing: "linear",
 
                 step: function(val) {
 
-                    $(".number").html(Math.ceil(val)); // Блок, где необходимо сделать анимацию
+                    $(".number").html(Math.ceil(val));
 
                 }
 

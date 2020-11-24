@@ -26,7 +26,7 @@ body {
   max-width: 300px;
 }
 .header__headlines h1,
-.header__headlines h3 {
+.header__headlines h2 {
   text-transform: uppercase;
 }
 .header__headlines p {
@@ -38,10 +38,10 @@ body {
   font-size: 60px;
   margin-bottom: 0px;
 }
-.header__headlines h3 {
+.header__headlines h2 {
   font-size: 32px;
 }
-.header__headlines h3::after {
+.header__headlines h2::after {
   content: '';
   width: 67px;
   height: 3px;
@@ -50,7 +50,7 @@ body {
   margin: 18px 0;
 }
 @media screen and (max-width: 600px) {
-  .header__headlines h3::after {
+  .header__headlines h2::after {
     display: none;
   }
 }
@@ -281,7 +281,7 @@ body {
   content: ' ';
   z-index: 98;
   opacity: 0.6;
-  background: rgba(54, 123, 245, 0.5);
+  background: rgba(31, 109, 247, 0.5);
   width: 100px;
   height: 100px;
   border-radius: 100%;
@@ -376,7 +376,7 @@ body {
   margin: 16px 0;
 }
 .about__title {
-  color: #367bf5;
+  color: #1f6df7;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -385,7 +385,7 @@ body {
   padding: 0 16px;
   width: 78px;
   height: 78px;
-  background-color: #367bf5;
+  background-color: #1f6df7;
   background-repeat: no-repeat;
 }
 .about__wrapper {
@@ -407,14 +407,14 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-.about h3 {
+.about h2 {
   margin: 0 18px;
   font-size: 28px;
   line-height: 1.2;
-  color: #367bf5;
+  color: #1f6df7;
 }
 @media screen and (max-width: 600px) {
-  .about h3 {
+  .about h2 {
     font-size: 24px;
   }
 }
@@ -427,7 +427,7 @@ body {
 }
 .about h1::after {
   content: '';
-  background-color: #367bf5;
+  background-color: #1f6df7;
   width: 78px;
   height: 78px;
   display: block;
@@ -521,7 +521,7 @@ body {
 
 .sale {
   background-image: url('/img/luchi.png');
-  background-color: #367bf5;
+  background-color: #1f6df7;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -655,7 +655,7 @@ footer {
   text-decoration: none !important;
 }
 .btn:hover {
-  background-color: #094abc;
+  background-color: #0641aa;
   color: #333333;
 }
 .btn__small {
@@ -673,12 +673,12 @@ footer {
   background-color: #ffcd4d;
 }
 .btn__blue {
-  background-color: #367bf5;
+  background-color: #1f6df7;
   color: #fff !important;
 }
 .btn__outline {
-  border: 2px solid #367bf5;
-  color: #367bf5 !important;
+  border: 2px solid #1f6df7;
+  color: #1f6df7 !important;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
   -webkit-transition: background-color 0.5s ease;
@@ -730,7 +730,7 @@ footer {
 .catalog h1 {
   font-size: 32px;
   padding: 38px 0 4px;
-  color: #367bf5;
+  color: #1f6df7;
   margin-top: 20px;
   text-transform: uppercase;
 }
@@ -738,7 +738,7 @@ footer {
   content: '';
   width: 67px;
   height: 3px;
-  background-color: #367bf5;
+  background-color: #1f6df7;
   display: block;
   margin: 24px auto;
 }
@@ -751,7 +751,7 @@ footer {
   width: 100%;
 }
 .catalog__sale {
-  color: red;
+  color: #de0f0f;
   font-weight: bold;
 }
 .catalog__item {
@@ -785,18 +785,31 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-top: 1px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
+  padding: 16px;
+  border-radius: 42px;
+}
+@media screen and (max-width: 600px) {
+  .catalog__item--footer {
+    padding: 8px;
+    font-size: 14px;
+  }
 }
 .catalog__item:hover {
   -webkit-box-shadow: 0px 4px 11px 0px rgba(54, 123, 245, 0.3);
   box-shadow: 0px 4px 11px 0px rgba(54, 123, 245, 0.3);
 }
-.catalog__price {
+.catalog__info {
   font-weight: bold;
-  color: #367bf5;
+  color: #1f6df7;
+  width: 100%;
+}
+.catalog__info:first-child {
+  color: red;
+  border-right: 1px solid #e4e4e4;
 }
 @media screen and (max-width: 600px) {
-  .catalog__price {
+  .catalog__info {
     padding: 0;
   }
 }
